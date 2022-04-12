@@ -1,17 +1,17 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: ubuntu
+  name: priviledged
   labels:
     app: ubuntu
 spec:
   selector:
     matchLabels:
-      app: ubuntu
+      app: priviledged
   template:
     metadata:
       labels:
-        app: ubuntu
+        app: priviledged
     spec:
       containers:
       - name: ubuntu
